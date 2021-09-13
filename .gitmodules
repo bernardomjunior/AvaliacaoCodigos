@@ -1,0 +1,3 @@
+[submodule "Framework-Project"]
+	path = Framework-Project
+	url = https://github.com/wellington-oj/Framework-Project
