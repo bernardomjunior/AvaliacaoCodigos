@@ -7,8 +7,6 @@ package com.android.knucleotide;
  modified by Tagir Valeev
  */
 
-
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,7 +26,10 @@ import java.util.concurrent.Future;
 
 import it.unimi.dsi.fastutil.longs.Long2IntOpenHashMap;
 
-public class knucleotide {
+class Knucleotide {
+
+    public
+
     static final byte[] codes = { -1, 0, -1, 1, 3, -1, -1, 2 };
     static final char[] nucleotides = { 'A', 'C', 'G', 'T' };
 
@@ -158,8 +159,8 @@ public class knucleotide {
         return toCodes(bytes, position);
     }
 
-    public static void main(String[] args) throws Exception {
-        byte[] sequence = read(System.in);
+    public void run(InputStream input) throws Exception {
+        byte[] sequence = read(input);
 
         ExecutorService pool = Executors.newFixedThreadPool(Runtime.getRuntime()
                 .availableProcessors());

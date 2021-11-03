@@ -179,7 +179,7 @@ void makeRandomFasta(
 main(args) {
   IOSink writer = stdout;
 
-  int n = 2500000;
+  int n = 10000000;
 
   makeRepeatFasta("ONE", "Homo sapiens alu", ALU, n * 2, writer);
   IUB.last = 42;

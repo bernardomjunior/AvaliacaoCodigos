@@ -5,8 +5,10 @@ import 'package:revcomp/revcomp.dart';
 
 Future<void> main() async {
   runApp(MyApp());
+  final stopwatch = Stopwatch()..start();
   Stream<ByteData> text = await loadAsset();
   run(text);
+  print('doSomething() executed in ${stopwatch.elapsed}');
 }
 
 

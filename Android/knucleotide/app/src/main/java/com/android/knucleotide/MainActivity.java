@@ -8,6 +8,7 @@ import android.util.Log;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,21 +17,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         String text;
+        long before = (new Date()).getTime();
         Log.i("CODE-RUN", "START");
         try {
-            text = readAssets();
-            boolean a = false;
-        } catch (IOException e) {
+            Knucleotide code = new Knucleotide();
+            code.run(getAssets().open("knucleotide input - 25000000.txt"));
+        } catch (Exception e) {
             e.printStackTrace();
         }
         Log.i("CODE-RUN", "END");
+        Log.i("CODE-RUN", "" + ((new Date()).getTime() - before));
     }
 
     private String readAssets() throws IOException {
         StringBuilder completeFile = new StringBuilder();
         BufferedReader reader = null;
         reader = new BufferedReader(
-                    new InputStreamReader(getAssets().open("knucleotide input - 2500000.txt")));
+                    new InputStreamReader(getAssets().open("knucleotide input.txt")));
         String mLine;
         while ((mLine = reader.readLine()) != null) {
             completeFile.append(mLine);
@@ -38,6 +41,4 @@ public class MainActivity extends AppCompatActivity {
         reader.close();
         return completeFile.toString();
     }
-
-
 }
