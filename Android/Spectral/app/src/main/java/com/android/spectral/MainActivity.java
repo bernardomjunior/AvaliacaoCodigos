@@ -15,9 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         repo.start(response -> {
-            Log.i("REQUEST", "COMECOU NBODY");
             spectral.run();
-            Log.i("REQUEST", "TERMINOU NBODY");
             repo.finish();
         });
     }
