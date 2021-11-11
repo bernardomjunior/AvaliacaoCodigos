@@ -204,5 +204,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-
+# assets files
 *.txt
