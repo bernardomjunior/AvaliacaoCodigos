@@ -205,4 +205,4 @@ dist
 .pnp.*
 
 # assets files
-*.txt
+*0.txt
