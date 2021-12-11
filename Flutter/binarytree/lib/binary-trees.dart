@@ -10,7 +10,7 @@ import 'dart:io';
 import 'Repository.dart';
 
 void run() {
-  final maxDepth = 21;
+  final maxDepth = 19;
 
   final stretchDepth = maxDepth + 1;
   final check = itemCheck(bottomUpTree(stretchDepth));

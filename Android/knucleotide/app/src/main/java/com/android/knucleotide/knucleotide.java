@@ -14,10 +14,9 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.AbstractMap.SimpleEntry;
 import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
-import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
@@ -66,15 +65,21 @@ class Knucleotide {
     }
 
     static Result sumTwoMaps(Result map1, Result map2) {
-        map2.map.forEach((key, value) -> map1.map.addTo(key, value));
+        for (Long aLong : map2.map.keySet()) {
+            map1.map.addTo(aLong, map2.map.get(aLong));
+        }
         return map1;
     }
 
+
+
     static String writeFrequencies(float totalCount, Result frequencies) {
-        List<Entry<String, Integer>> freq = new ArrayList<>(frequencies.map.size());
-        frequencies.map.forEach((key, cnt) -> freq.add(new SimpleEntry<>(keyToString(key,
-                frequencies.keyLength), cnt)));
-        freq.sort(Map.Entry.comparingByValue(Comparator.reverseOrder()));
+        ArrayList<Entry<String, Integer>> freq = new ArrayList<>(frequencies.map.size());
+        for (Long aLong : frequencies.map.keySet()) {
+            freq.add(new SimpleEntry<>(keyToString(aLong,
+                    frequencies.keyLength), frequencies.map.get(aLong)));
+        }
+        Collections.sort(freq, (o1, o2) -> -(o1.getValue().compareTo(o2.getValue())));
         StringBuilder sb = new StringBuilder();
         for (Entry<String, Integer> entry : freq) {
             sb.append(String.format(Locale.ENGLISH, "%s %.3f\n", entry.getKey(),

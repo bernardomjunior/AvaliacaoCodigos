@@ -148,7 +148,7 @@ double energy() {
 }
 
 void run() {
-  final n = 50000000;
+  final n = 20000000;
 
   offsetMomentum();
   print(energy().toStringAsFixed(9));

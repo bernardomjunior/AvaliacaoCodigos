@@ -12,28 +12,28 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
+    private final Repository repo = new Repository();
+    private final Knucleotide code = new Knucleotide();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String text;
-        long before = (new Date()).getTime();
-        Log.i("CODE-RUN", "START");
-        try {
-            Knucleotide code = new Knucleotide();
-            code.run(getAssets().open("knucleotide input - 25000000.txt"));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        Log.i("CODE-RUN", "END");
-        Log.i("CODE-RUN", "" + ((new Date()).getTime() - before));
+        repo.start(response -> {
+            try {
+                code.run(getAssets().open("knucleotide input - 25000000.txt"));
+                repo.finish();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
     }
 
     private String readAssets() throws IOException {
         StringBuilder completeFile = new StringBuilder();
         BufferedReader reader = null;
         reader = new BufferedReader(
-                    new InputStreamReader(getAssets().open("knucleotide input.txt")));
+                new InputStreamReader(getAssets().open("knucleotide input.txt")));
         String mLine;
         while ((mLine = reader.readLine()) != null) {
             completeFile.append(mLine);
