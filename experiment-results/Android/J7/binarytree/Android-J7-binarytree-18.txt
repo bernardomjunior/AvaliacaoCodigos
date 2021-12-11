@@ -1,0 +1,555 @@
+Battery History (0% used, 140 used of 256KB, 2 strings using 74):
+                    0 (9) RESET:TIME: 2021-12-05-23-10-13
+                    0 (1) 096 status=discharging health=good plug=none temp=344 volt=4117 +running +wake_lock +wifi_radio +audio +wifi_running +wifi wifi_signal_strength=4 wifi_suppl=completed
+                    0 (2) 096 top=u0a46:"com.android.binarytree"
+                    0 (2) 096 user=0:"0"
+                    0 (2) 096 userfg=0:"0"
+            +17s956ms (2) 095
+                 Details: cpu=29390u+2210s
+                          /proc/stat=31290 usr, 2440 sys, -720 io, 0 irq, 50 sirq, 27910 idle (54.2% of 10m 9s 700ms)
+
+Per-PID Stats:
+  PID 2703 wake time: +13ms
+  PID 3674 wake time: +9ms
+  PID 3504 wake time: +28ms
+  PID 2703 wake time: +3ms
+  PID 3674 wake time: +569ms
+  PID 6042 wake time: +38s251ms
+
+Daily stats:
+  Current start time: 2021-12-05-01-00-09
+  Next min deadline: 2021-12-06-01-00-00
+  Next max deadline: 2021-12-06-03-00-00
+  Current daily discharge step durations:
+    #0: +5m48s611ms to 95 (power-save-off, device-idle-off)
+    #1: +4m0s202ms to 96 (screen-on, power-save-off, device-idle-off)
+    #2: +8m22s827ms to 97 (power-save-off, device-idle-off)
+    #3: +6m30s373ms to 98 (screen-on, power-save-off, device-idle-off)
+      Discharge total time: 10h 17m 30s 300ms  (from 4 steps)
+      Discharge screen on time: 8h 45m 28s 700ms  (from 2 steps)
+  Current daily charge step durations:
+    #0: +4m12s619ms to 89 (screen-off, power-save-off, device-idle-off)
+    #1: +4m2s401ms to 88 (screen-off, power-save-off, device-idle-off)
+    #2: +4m2s428ms to 87 (screen-off, power-save-off, device-idle-off)
+    #3: +4m2s414ms to 86 (screen-off, power-save-off, device-idle-off)
+    #4: +4m22s660ms to 85 (screen-off, power-save-off, device-idle-off)
+    #5: +4m2s387ms to 84 (power-save-off, device-idle-off)
+    #6: +4m2s371ms to 83 (screen-off, power-save-off, device-idle-off)
+    #7: +3m42s258ms to 82 (power-save-off, device-idle-off)
+    #8: +4m22s693ms to 81 (screen-off, power-save-off, device-idle-off)
+    #9: +3m52s400ms to 80 (screen-off, power-save-off, device-idle-off)
+    #10: +4m2s518ms to 79 (screen-off, power-save-off, device-idle-off)
+    #11: +3m42s212ms to 78 (screen-off, power-save-off, device-idle-off)
+    #12: +4m12s529ms to 77 (screen-off, power-save-off, device-idle-off)
+    #13: +3m42s221ms to 76 (screen-off, power-save-off, device-idle-off)
+      Charge total time: 6h 42m 52s 200ms  (from 14 steps)
+      Charge screen off time: 6h 45m 28s 800ms  (from 12 steps)
+    Package changes:
+      Update com.android.binarytree vers=1
+      Update com.android.binarytree vers=1
+      Update com.android.binarytree vers=1
+      Update com.android.binarytree vers=1
+      Update com.example.binarytree vers=1
+      Update com.android.binarytree vers=1
+      Update com.android.binarytree vers=1
+      Update com.android.binarytree vers=1
+      Update com.android.binarytree vers=1
+  Daily from 2021-12-04-04-42-43 to 2021-12-05-01-00-09:
+    Discharge step durations:
+      #0: +4h7m38s934ms to 69 (power-save-off, device-idle-off)
+      #1: +2h42m40s47ms to 70 (screen-off, power-save-off, device-idle-off)
+      #2: +5h32m43s875ms to 71 (screen-off, power-save-off, device-idle-off)
+      #3: +5h1m31s107ms to 72 (screen-off, power-save-off, device-idle-off)
+        Discharge total time: 18d 3h 14m 9s 0ms  (from 4 steps)
+        Discharge screen off time: 18d 10h 43m 54s 300ms  (from 3 steps)
+    Charge step durations:
+      #0: +3m42s270ms to 74 (screen-off, power-save-off, device-idle-off)
+      #1: +4m22s551ms to 73 (screen-off, power-save-off, device-idle-off)
+      #2: +3m32s140ms to 72 (screen-off, power-save-off, device-idle-off)
+        Charge total time: 6h 27m 12s 0ms  (from 3 steps)
+        Charge screen off time: 6h 27m 12s 0ms  (from 3 steps)
+  Daily from 2021-12-03-03-19-27 to 2021-12-04-04-42-43:
+    Discharge step durations:
+      #0: +4h28m27s993ms to 74 (screen-off, power-save-off, device-idle-off)
+      #1: +3h0m58s999ms to 75 (screen-off, power-save-off, device-idle-off)
+      #2: +3h28m6s978ms to 76 (screen-off, power-save-off, device-idle-off)
+      #3: +7h3m59s53ms to 77 (screen-off, power-save-off, device-idle-off)
+      #4: +2h58m52s956ms to 78 (screen-off, power-save-off, device-idle-off)
+        Discharge total time: 17d 12h 8m 39s 500ms  (from 5 steps)
+        Discharge screen off time: 17d 12h 8m 39s 500ms  (from 5 steps)
+    Package changes:
+      Update com.android.vending vers=82821010
+  Daily from 2021-12-02-06-40-17 to 2021-12-03-03-19-27:
+    Discharge step durations:
+      #0: +3h40m13s5ms to 80 (screen-off, power-save-off, device-idle-off)
+      #1: +4h53m14s11ms to 81 (screen-off, power-save-off, device-idle-off)
+      #2: +5h5m53s973ms to 82 (screen-off, power-save-off, device-idle-off)
+        Discharge total time: 18d 23h 11m 39s 600ms  (from 3 steps)
+        Discharge screen off time: 18d 23h 11m 39s 600ms  (from 3 steps)
+  Daily from 2021-12-01-05-49-21 to 2021-12-02-06-40-17:
+    Discharge step durations:
+      #0: +4h38m46s17ms to 84 (screen-off, power-save-off, device-idle-off)
+      #1: +3h36m48s989ms to 85 (screen-off, power-save-off, device-idle-off)
+      #2: +3h52m57s945ms to 86 (screen-off, power-save-off, device-idle-off)
+      #3: +4h7m36s14ms to 87 (screen-off, power-save-off, device-idle-off)
+      #4: +4h34m43s72ms to 88 (screen-off, power-save-off, device-idle-off)
+        Discharge total time: 17d 8h 57m 20s 700ms  (from 5 steps)
+        Discharge screen off time: 17d 8h 57m 20s 700ms  (from 5 steps)
+  Daily from 2021-11-30-05-01-04 to 2021-12-01-05-49-21:
+    Discharge step durations:
+      #0: +6h27m27s150ms to 90 (screen-off, power-save-off, device-idle-off)
+      #1: +4h58m49s41ms to 91 (screen-off, power-save-off, device-idle-off)
+      #2: +3h49m52s966ms to 92 (screen-off, power-save-off, device-idle-off)
+      #3: +5h7m33s980ms to 93 (screen-off, power-save-off, device-idle-off)
+        Discharge total time: 21d 5h 52m 58s 400ms  (from 4 steps)
+        Discharge screen off time: 21d 5h 52m 58s 400ms  (from 4 steps)
+  Daily from 2021-11-29-01-03-21 to 2021-11-30-05-01-04:
+    Discharge step durations:
+      #0: +3h58m18s975ms to 95 (screen-off, power-save-off, device-idle-off)
+      #1: +6h20m9s995ms to 96 (screen-off, power-save-off, device-idle-off)
+      #2: +3h23m33s41ms to 97 (screen-off, power-save-off, device-idle-off)
+      #3: +5h40m7s974ms to 98 (screen-off, power-save-off, device-idle-off)
+        Discharge total time: 20d 4h 14m 9s 600ms  (from 4 steps)
+        Discharge screen off time: 20d 4h 14m 9s 600ms  (from 4 steps)
+  Daily from 2021-11-28-08-32-11 to 2021-11-29-01-03-21:
+    Discharge step durations:
+      #0: +12m48s847ms to 91 (screen-off, power-save-off, device-idle-off)
+      #1: +8m23s112ms to 92 (screen-off, power-save-off, device-idle-off)
+      #2: +6m0s297ms to 93 (power-save-off, device-idle-off)
+      #3: +6m0s328ms to 94 (screen-on, power-save-off, device-idle-off)
+      #4: +8m0s447ms to 95 (screen-on, power-save-off, device-idle-off)
+      #5: +8m13s304ms to 96 (power-save-off, device-idle-off)
+      #6: +6m0s283ms to 97 (screen-on, power-save-off, device-idle-off)
+      #7: +4h32m56s20ms to 87 (screen-off, power-save-off, device-idle-off)
+      #8: +4h7m51s990ms to 88 (screen-off, power-save-off, device-idle-off)
+        Discharge total time: 4d 10h 42m 42s 500ms  (from 9 steps)
+        Discharge screen off time: 9d 9h 49m 59s 200ms  (from 4 steps)
+        Discharge screen on time: 11h 7m 15s 200ms  (from 3 steps)
+    Package changes:
+      Update com.example.nbody vers=1
+      Update com.example.nbody vers=1
+      Update com.example.nbody vers=1
+      Update com.android.binarytree vers=1
+      Update com.android.binarytree vers=1
+      Update com.android.binarytree vers=1
+      Update com.android.binarytree vers=1
+      Update com.android.binarytree vers=1
+      Update com.android.binarytree vers=1
+  Daily from 2021-11-27-03-43-22 to 2021-11-28-08-32-11:
+    Discharge step durations:
+      #0: +3h38m19s934ms to 90 (screen-off, power-save-off, device-idle-off)
+      #1: +5h19m19s49ms to 91 (screen-off, power-save-off, device-idle-off)
+      #2: +2h57m48s29ms to 92 (screen-off, power-save-off, device-idle-off)
+      #3: +5h29m0s955ms to 93 (screen-off, power-save-off, device-idle-off)
+      #4: +5h18m31s989ms to 94 (screen-off, power-save-off, device-idle-off)
+        Discharge total time: 18d 22h 19m 59s 100ms  (from 5 steps)
+        Discharge screen off time: 18d 22h 19m 59s 100ms  (from 5 steps)
+  Daily from 2021-11-26-03-07-38 to 2021-11-27-03-43-22:
+    Discharge step durations:
+      #0: +5h31m4s993ms to 96 (screen-off, power-save-off, device-idle-off)
+      #1: +4h3m10s6ms to 97 (power-save-off, device-idle-off)
+      #2: +3h19m24s981ms to 98 (power-save-off, device-idle-off)
+        Discharge total time: 17d 21h 48m 52s 600ms  (from 3 steps)
+        Discharge screen off time: 22d 23h 48m 19s 300ms  (from 1 steps)
+  Daily from 2021-11-25-09-14-52 to 2021-11-26-03-07-38:
+    Discharge step durations:
+      #0: +5h22m39s56ms to 93 (screen-off, power-save-off, device-idle-off)
+      #1: +3h3m55s2ms to 94 (screen-off, power-save-off, device-idle-off)
+      #2: +4h41m50s941ms to 95 (screen-off, power-save-off, device-idle-off)
+        Discharge total time: 18d 6h 0m 33s 300ms  (from 3 steps)
+        Discharge screen off time: 18d 6h 0m 33s 300ms  (from 3 steps)
+
+Statistics since last charge:
+  System starts: 0, currently on battery: true
+rawRealtime = 2315232510 (ms) 
+  Time on battery: 27s 438ms (100.0%) realtime, 27s 438ms (100.0%) uptime
+  Time on battery screen off: 27s 438ms (100.0%) realtime, 27s 438ms (100.0%) uptime
+  Total run time: 27s 445ms realtime, 27s 445ms uptime
+  Start clock time: 2021-12-05-23-10-13
+  Screen on: 0ms (0.0%) 0x, Interactive: 0ms (0.0%)
+  Screen brightnesses: (no activity)
+  Total partial wakelock time: 27s 432ms
+  Mobile total received: 0B, sent: 0B (packets received 0, sent 0)
+  Phone signal levels: (no activity)
+  Signal scanning time: 0ms
+  Radio types: (no activity)
+  Mobile radio active time: 0ms (0.0%) 0x
+  Wi-Fi total received: 5.93KB, sent: 6.55KB (packets received 84, sent 94)
+  Wifi on: 27s 437ms (100.0%), Wifi running: 27s 437ms (100.0%)
+  Wifi states: (no activity)
+  Wifi supplicant states:
+    completed 27s 437ms (100.0%) 0x
+  Wifi signal levels:
+    level(4) 27s 437ms (100.0%) 0x
+  WiFi Idle time: 0ms (--%)
+  WiFi Rx time:   0ms (--%)
+  WiFi Tx time:   0ms (--%)
+  WiFi Power drain: 0mAh
+  Bluetooth Idle time: 0ms (--%)
+  Bluetooth Rx time:   0ms (--%)
+  Bluetooth Tx time:   0ms (--%)
+  Bluetooth Power drain: 0mAh
+
+  Device battery use since last full charge
+    Amount discharged (lower bound): 0
+    Amount discharged (upper bound): 1
+    Amount discharged while screen on: 0
+    Amount discharged while screen off: 1
+
+  Estimated power use (mAh):
+    Capacity: 3000, Computed drain: 2.65, actual drain: 0-30.0
+    Uid u0a19: 1.34 ( cpu=1.34 )
+    Uid u0a46: 1.24 ( cpu=1.24 wifi=0.0000132 )
+    Uid 2000: 0.0262 ( cpu=0.0261 wifi=0.0000953 )
+    Idle: 0.0152
+    Uid 0: 0.0120 ( cpu=0.0120 wifi=0.00000807 )
+    Wifi: 0.00762 ( wifi=0.00762 )
+    Uid 1000: 0.00468 ( cpu=0.00468 )
+    Uid u0a9: 0.00138 ( cpu=0.00136 sensor=0.0000189 )
+    Uid u0a4: 0.00107 ( cpu=0.00107 )
+    Uid u0a62: 0.000769 ( cpu=0.000756 wifi=0.0000139 )
+    Uid u0a41: 0.000144 ( cpu=0.000144 )
+    Uid u0a111: 0.0000969 ( cpu=0.0000969 )
+    Uid u0a145: 0.0000969 ( cpu=0.0000969 )
+
+  All kernel wake locks:
+  Kernel Wake lock PowerManagerService.WakeLocks: 27s 415ms (0 times) realtime
+  Kernel Wake lock wlan_rx_wake: 12s 31ms (24 times) realtime
+  Kernel Wake lock wlan_wd_wake: 1s 928ms (25 times) realtime
+  Kernel Wake lock umts_ipc1   : 1s 490ms (3 times) realtime
+  Kernel Wake lock umts_ipc0   : 996ms (2 times) realtime
+  Kernel Wake lock alarm_temp  : 990ms (1 times) realtime
+  Kernel Wake lock wlan_wake   : 136ms (64 times) realtime
+  Kernel Wake lock sec-battery-monitor: 24ms (1 times) realtime
+  Kernel Wake lock NETLINK     : 6ms (6 times) realtime
+  Kernel Wake lock alarm       : 3ms (1 times) realtime
+  Kernel Wake lock binder      : 1ms (6 times) realtime
+  Kernel Wake lock battery     : 1ms (1 times) realtime
+
+  All partial wake locks:
+  Wake lock u0a19 com.ticlock.com.evernote.android.job.JobRescheduleService:launch: 27s 59ms (0 times) realtime
+  Wake lock u0a9 NlpCollectorWakeLock: 197ms (1 times) realtime
+  Wake lock u0a9 *net_scheduler*: 62ms (4 times) realtime
+  Wake lock u0a9 *gms_scheduler*/com.google.android.gms/.clearcut.uploader.QosUploaderService: 52ms (1 times) realtime
+  Wake lock u0a9 *gms_scheduler*/com.google.android.gms/.ads.social.GcmSchedulerWakeupService: 19ms (1 times) realtime
+  Wake lock u0a9 NlpWakeLock: 18ms (3 times) realtime
+  Wake lock 1001 RILJ1: 7ms (3 times) realtime
+  Wake lock 1001 RILJ0: 7ms (2 times) realtime
+  Wake lock 1000 *alarm*: 4ms (1 times) realtime
+  Wake lock u0a9 GCoreFlp: 3ms (3 times) realtime
+  Wake lock 1000 NlpWakeLock: 3ms (2 times) realtime
+  Wake lock u0a9 *alarm*: 1ms (1 times) realtime
+
+  0:
+    Wi-Fi network: 282B received, 367B sent (packets 6 received, 5 sent)
+    Total cpu time: u=5ms s=380ms p=0mAh
+    Proc kworker/u16:2:
+      CPU: 0ms usr + 40ms krn ; 0ms fg
+    Proc diagexe:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc dhd_rxf:
+      CPU: 0ms usr + 20ms krn ; 0ms fg
+    Proc dhd_dpc:
+      CPU: 0ms usr + 70ms krn ; 0ms fg
+    Proc migration/3:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc migration/2:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc migration/1:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc migration/0:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc mmcqd/0:
+      CPU: 0ms usr + 130ms krn ; 0ms fg
+    Proc dhd_watchdog_th:
+      CPU: 0ms usr + 20ms krn ; 0ms fg
+    Proc kworker/4:0:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc kworker/1:1:
+      CPU: 0ms usr + 30ms krn ; 0ms fg
+    Proc kworker/0:1:
+      CPU: 0ms usr + 70ms krn ; 0ms fg
+    Proc kworker/0:0:
+      CPU: 0ms usr + 50ms krn ; 0ms fg
+    Proc rcu_preempt:
+      CPU: 0ms usr + 20ms krn ; 0ms fg
+    Proc rild:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc netd:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc lmkd:
+      CPU: 0ms usr + 20ms krn ; 0ms fg
+    Proc jbd2/mmcblk0p23:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc ueventd:
+      CPU: 10ms usr + 0ms krn ; 0ms fg
+    Proc zygote:
+      CPU: 10ms usr + 10ms krn ; 0ms fg
+    Proc smdexe:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc cfinteractive4:
+      CPU: 0ms usr + 40ms krn ; 0ms fg
+    Proc cfinteractive0:
+      CPU: 0ms usr + 70ms krn ; 0ms fg
+    Proc ion_noncontig_h:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+  1000:
+    Wake lock NlpWakeLock: 3ms partial (2 times) realtime
+    Wake lock *alarm*: 4ms partial (1 times) realtime
+    TOTAL wake: 7ms partial realtime
+    Foreground for: 27s 435ms 
+    Total cpu time: u=75ms s=75ms p=0mAh
+    Proc servicemanager:
+      CPU: 20ms usr + 10ms krn ; 0ms fg
+    Proc com.sec.android.inputmethod:
+      CPU: 10ms usr + 0ms krn ; 0ms fg
+    Proc surfaceflinger:
+      CPU: 10ms usr + 30ms krn ; 0ms fg
+    Proc system:
+      CPU: 430ms usr + 420ms krn ; 0ms fg
+    Proc argosd:
+      CPU: 10ms usr + 0ms krn ; 0ms fg
+  1001:
+    Wake lock RILJ1: 7ms partial (3 times) realtime
+    Wake lock RILJ0: 7ms partial (2 times) realtime
+    TOTAL wake: 14ms partial realtime
+    Foreground for: 27s 435ms 
+    Proc com.android.phone:
+      CPU: 10ms usr + 20ms krn ; 0ms fg
+  1002:
+    Foreground for: 27s 435ms 
+  1013:
+    Audio: 27s 435ms realtime (0 times)
+  2000:
+    Wi-Fi network: 3.25KB received, 4.44KB sent (packets 61 received, 69 sent)
+    Total cpu time: u=925ms s=130ms p=0mAh
+    (nothing executed)
+  5002:
+    Foreground for: 27s 432ms 
+  5004:
+    Foreground for: 27s 432ms 
+  5005:
+    Foreground for: 27s 432ms 
+  5006:
+    Foreground for: 27s 432ms 
+  5009:
+    Foreground for: 27s 432ms 
+  5010:
+    Foreground for: 27s 432ms 
+  5011:
+    Foreground for: 27s 432ms 
+  5012:
+    Foreground for: 27s 432ms 
+  u0a2:
+    Foreground for: 27s 432ms 
+  u0a3:
+    Running for: 27s 432ms 
+    Proc com.sec.android.app.launcher:
+      CPU: 40ms usr + 10ms krn ; 0ms fg
+  u0a4:
+    Foreground for: 27s 432ms 
+    Total cpu time: u=50ms s=5ms p=0mAh
+  u0a5:
+    Foreground for: 27s 432ms 
+  u0a7:
+    Foreground for: 27s 432ms 
+  u0a8:
+    Foreground for: 27s 432ms 
+  u0a9:
+    Wake lock *net_scheduler*: 62ms partial (4 times) realtime
+    Wake lock GCoreFlp: 3ms partial (3 times) realtime
+    Wake lock NlpWakeLock: 18ms partial (3 times) realtime
+    Wake lock *alarm*: 1ms partial (1 times) realtime
+    Wake lock NlpCollectorWakeLock: 197ms partial (1 times) realtime
+    Wake lock *gms_scheduler*/com.google.android.gms/.clearcut.uploader.QosUploaderService: 52ms partial (1 times) realtime
+    Wake lock *gms_scheduler*/com.google.android.gms/.ads.social.GcmSchedulerWakeupService: 19ms partial (1 times) realtime
+    TOTAL wake: 352ms partial realtime
+    Sensor 0: 524ms realtime (1 times)
+    Foreground for: 27s 432ms 
+    Total cpu time: u=20ms s=25ms p=0mAh
+    Proc com.google.android.gms:
+      CPU: 10ms usr + 30ms krn ; 0ms fg
+    Proc com.google.android.gms.persistent:
+      CPU: 300ms usr + 100ms krn ; 0ms fg
+    Apk com.google.android.gms:
+      Wakeup alarm *walarm*:com.google.android.location.ALARM_WAKEUP_ACTIVITY_DETECTION: 1 times
+      Wakeup alarm *walarm*:com.google.android.gms.gcm.ACTION_CHECK_QUEUE: 1 times
+      Service com.google.android.gms.auth.GetToken:
+        Created for: 0ms uptime
+        Starts: 0, launches: 1
+      Service com.google.android.gms.clearcut.uploader.QosUploaderService:
+        Created for: 0ms uptime
+        Starts: 0, launches: 1
+      Service com.google.android.gms.auth.account.be.legacy.GoogleAccountDataService:
+        Created for: 0ms uptime
+        Starts: 0, launches: 1
+      Service com.google.android.gms.ads.social.GcmSchedulerWakeupService:
+        Created for: 0ms uptime
+        Starts: 0, launches: 1
+      Service com.google.android.gms.auth.account.authenticator.DefaultAuthDelegateService:
+        Created for: 0ms uptime
+        Starts: 0, launches: 1
+  u0a11:
+    Foreground for: 27s 432ms 
+  u0a12:
+    Foreground for: 27s 432ms 
+  u0a13:
+    Foreground for: 27s 432ms 
+  u0a15:
+    Running for: 27s 432ms 
+  u0a16:
+    Active for: 27s 432ms 
+  u0a17:
+    Running for: 27s 432ms 
+  u0a19:
+    Wake lock com.ticlock.com.evernote.android.job.JobRescheduleService:launch: 27s 59ms partial (0 times) realtime
+    Foreground for: 27s 432ms 
+    Total cpu time: u=39s 450ms s=2s 320ms p=0mAh
+    Proc *wakelock*:
+      CPU: 39s 425ms usr + 2s 310ms krn ; 0ms fg
+  u0a20:
+    Foreground for: 27s 432ms 
+  u0a23:
+    Foreground for: 27s 432ms 
+  u0a25:
+    Foreground for: 27s 432ms 
+  u0a26:
+    Foreground for: 27s 432ms 
+  u0a27:
+    Running for: 27s 432ms 
+  u0a29:
+    Foreground for: 27s 432ms 
+  u0a31:
+    Foreground activities: 27s 432ms realtime (0 times)
+    Foreground for: 27s 432ms 
+  u0a32:
+    Foreground for: 27s 432ms 
+  u0a33:
+    Foreground for: 27s 432ms 
+  u0a35:
+    Foreground for: 27s 432ms 
+  u0a36:
+    Foreground for: 27s 432ms 
+  u0a40:
+    Running for: 27s 432ms 
+  u0a41:
+    Foreground for: 27s 432ms 
+    Total cpu time: u=0ms s=5ms p=0mAh
+    Proc com.android.systemui:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+  u0a42:
+    Foreground for: 27s 432ms 
+  u0a43:
+    Foreground for: 27s 432ms 
+    Proc com.google.android.googlequicksearchbox:search:
+      CPU: 140ms usr + 20ms krn ; 0ms fg
+  u0a46:
+    Wi-Fi network: 541B received, 868B sent (packets 7 received, 11 sent)
+    Foreground activities: 27s 432ms realtime (0 times)
+    Foreground for: 27s 432ms 
+    Total cpu time: u=38s 300ms s=1s 670ms p=0mAh
+    Proc com.android.binarytree:
+      CPU: 1m 6s 950ms usr + 2s 820ms krn ; 0ms fg
+  u0a48:
+    Foreground for: 27s 432ms 
+  u0a52:
+    Foreground for: 27s 432ms 
+  u0a56:
+    Running for: 27s 432ms 
+  u0a62:
+    Wi-Fi network: 1.87KB received, 919B sent (packets 10 received, 9 sent)
+    Foreground for: 27s 432ms 
+    Total cpu time: u=15ms s=10ms p=0mAh
+    Proc com.android.chrome:
+      CPU: 60ms usr + 40ms krn ; 0ms fg
+  u0a63:
+    Foreground for: 27s 432ms 
+  u0a64:
+    Foreground for: 27s 432ms 
+  u0a69:
+    Foreground for: 27s 432ms 
+  u0a73:
+    Foreground for: 27s 432ms 
+  u0a74:
+    Foreground for: 27s 432ms 
+  u0a75:
+    Foreground for: 27s 432ms 
+  u0a77:
+    Foreground for: 27s 432ms 
+  u0a83:
+    Foreground for: 27s 432ms 
+  u0a84:
+    Foreground for: 27s 432ms 
+  u0a85:
+    Foreground for: 27s 432ms 
+  u0a90:
+    Foreground for: 27s 432ms 
+  u0a91:
+    Foreground for: 27s 432ms 
+  u0a94:
+    Foreground for: 27s 432ms 
+    Proc com.sec.android.app.sbrowser:
+      CPU: 20ms usr + 10ms krn ; 0ms fg
+  u0a98:
+    Foreground for: 27s 432ms 
+  u0a99:
+    Foreground for: 27s 432ms 
+  u0a101:
+    Foreground for: 27s 432ms 
+  u0a106:
+    Foreground for: 27s 432ms 
+  u0a109:
+    Foreground for: 27s 432ms 
+  u0a110:
+    Foreground for: 27s 432ms 
+  u0a111:
+    Running for: 27s 432ms 
+    Total cpu time: u=5ms s=0ms p=0mAh
+  u0a112:
+    Foreground for: 27s 432ms 
+  u0a113:
+    Foreground for: 27s 432ms 
+  u0a115:
+    Foreground for: 27s 432ms 
+  u0a116:
+    Foreground for: 27s 432ms 
+  u0a117:
+    Foreground for: 27s 432ms 
+  u0a121:
+    Foreground for: 27s 432ms 
+  u0a124:
+    Foreground for: 27s 432ms 
+  u0a127:
+    Foreground for: 27s 432ms 
+  u0a129:
+    Running for: 27s 432ms 
+  u0a142:
+    Foreground for: 27s 432ms 
+  u0a143:
+    Foreground for: 27s 432ms 
+  u0a145:
+    Foreground for: 27s 432ms 
+    Total cpu time: u=5ms s=0ms p=0mAh
+  u0a146:
+    Foreground for: 27s 432ms 
+  u0a151:
+    Foreground for: 27s 432ms 
+  u0a153:
+    Foreground for: 27s 432ms 
+  u0a154:
+    Foreground for: 27s 432ms 
+  u0a163:
+    Foreground for: 27s 432ms 
+  u0a165:
+    Foreground for: 27s 432ms 
+  u0a167:
+    Foreground for: 27s 432ms 
+  u0a168:
+    Foreground for: 27s 432ms 
+  u0a169:
+    Running for: 27s 432ms 
+  u0a172:
+    Foreground for: 27s 431ms 
+  u0a177:
+    Foreground for: 27s 431ms 
+
