@@ -8,14 +8,19 @@ package com.android.regex;
 */
 
 import java.io.*;
+import java.util.AbstractMap;
+import java.util.Arrays;
 
-import java.util.*;
-import java.util.concurrent.CompletableFuture;
-import java.util.Map.Entry;
-import java.util.function.*;
-import java.util.regex.*;
 
-import static java.util.stream.Collectors.*;
+import java9.util.stream.Collectors;
+import java9.util.stream.StreamSupport;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Pattern;
+import java9.util.concurrent.CompletableFuture;
+import java9.util.function.BiFunction;
+import java9.util.stream.Stream;
 
 public class RegexRedux {
 
@@ -61,16 +66,18 @@ public class RegexRedux {
                 "agggta[cgt]a|t[acg]taccct",
                 "agggtaa[cgt]|[acg]ttaccct");
 
-        BiFunction<String, String, Entry<String, Long>> counts = (v, s) -> {
-            Long count = Pattern.compile(v).splitAsStream(s).count() - 1; //Off by one
+        BiFunction<String, String, Map.Entry<String, Long>> counts = (v, s) -> {
+            Long count = Stream.of(s.split(v)).count() - 1; //Off by one
             return new AbstractMap.SimpleEntry<>(v, count);
         };
 
-        final Map<String, Long> results = variants.parallelStream()
+        final Map<String, Long> results = StreamSupport.parallelStream(variants)
                 .map(variant -> counts.apply(variant, sequence))
-                .collect(toMap(Map.Entry::getKey, Map.Entry::getValue));
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
 
-        variants.forEach(variant -> System.out.println(variant + " " + results.get(variant)));
+        for (String variant : variants) {
+            System.out.println(variant + " " + results.get(variant));
+        }
 
         System.out.println();
         System.out.println(initialLength);

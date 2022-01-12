@@ -1,4 +1,4 @@
-package com.android.pidigits;
+package com.android.fannkuch;
 
 
 import android.util.Log;

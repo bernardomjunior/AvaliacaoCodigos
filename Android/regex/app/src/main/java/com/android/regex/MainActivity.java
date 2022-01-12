@@ -11,19 +11,19 @@ import java.util.Date;
 public class MainActivity extends AppCompatActivity {
 
     RegexRedux regex = new RegexRedux();
+    Repository repo = new Repository();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        long before = (new Date()).getTime();
-        Log.i("CODE-RUN", "START");
-        try {
-            regex.run(getAssets().open("5000000.txt"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        Log.i("CODE-RUN", "END");
-        Log.i("CODE-RUN", "" + ((new Date()).getTime() - before));
+        repo.start(response -> {
+            try {
+                regex.run(getAssets().open("1500000.txt"));
+                repo.finish();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
     }
 }

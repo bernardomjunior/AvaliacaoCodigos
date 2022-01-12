@@ -14,8 +14,6 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.atomic.AtomicInteger;
 
-
-
 public class MainActivity extends AppCompatActivity {
 
     private final Repository repository = new Repository();
@@ -24,17 +22,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        long startTime = System.currentTimeMillis();
-//        Log.i("LOG-P", "COMEÇOU" );
-//        new fasta().run();
-//        long endTime = System.currentTimeMillis();
-//        long timeElapsed = (endTime - startTime) / 1000;
-//        Log.i("LOG-P", "Execution time in seconds: " + timeElapsed);
         repository.start(response -> {
             new fasta().run();
             repository.finish();
         });
-
     }
 }
 

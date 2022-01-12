@@ -1,4 +1,4 @@
-package com.android.pidigits;
+package com.android.mandelbrot;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

@@ -28,17 +28,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-    private String readAssets() throws IOException {
-        StringBuilder completeFile = new StringBuilder();
-        BufferedReader reader = null;
-        reader = new BufferedReader(
-                new InputStreamReader(getAssets().open("knucleotide input.txt")));
-        String mLine;
-        while ((mLine = reader.readLine()) != null) {
-            completeFile.append(mLine);
-        }
-        reader.close();
-        return completeFile.toString();
-    }
 }

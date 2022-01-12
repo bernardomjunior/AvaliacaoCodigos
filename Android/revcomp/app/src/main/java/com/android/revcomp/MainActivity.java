@@ -11,20 +11,22 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
+    RevComp code = new RevComp();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        long before = (new Date()).getTime();
-        Log.i("CODE-RUN", "START");
+        long startTime = System.currentTimeMillis();
         try {
-            RevComp code = new RevComp();
             code.run(getAssets().open("10000000.txt"));
         } catch (Exception e) {
             e.printStackTrace();
         }
-        Log.i("CODE-RUN", "END");
-        Log.i("CODE-RUN", "" + ((new Date()).getTime() - before));
+        long endTime = System.currentTimeMillis();
+        long duration = (endTime - startTime)/1000;
+        Log.i("CODE TIME", ""+duration);
     }
 }
