@@ -1,6 +1,6 @@
 import 'package:http/http.dart' as http;
 
-const BASE_URL = "http://192.168.0.100:3000/";
+const BASE_URL = "http://192.168.1.2:3000/";
 const START_ENDPOINT = "what_now/";
 const FINISH_ENDPOINT = "logdata/";
 

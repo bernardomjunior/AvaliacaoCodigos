@@ -3,15 +3,13 @@ import 'dart:async' show Future;
 import 'package:flutter/services.dart' show ByteData, rootBundle;
 import 'package:revcomp/revcomp.dart';
 
+import 'Repository.dart';
+
 Future<void> main() async {
   runApp(MyApp());
-  final stopwatch = Stopwatch()..start();
   Stream<ByteData> text = await loadAsset();
-  run(text);
-  print('doSomething() executed in ${stopwatch.elapsed}');
+  start(run, text);
 }
-
-
 
 Future<Stream<ByteData>> loadAsset() async {
   var s = await rootBundle.load("assets/10000000.txt");
