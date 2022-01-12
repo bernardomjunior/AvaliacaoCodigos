@@ -15,7 +15,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         repo.start(response -> {
-            spectral.run();
+            try {
+                spectral.run();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             repo.finish();
         });
     }
