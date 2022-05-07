@@ -38,9 +38,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        ActivityCompat.requestPermissions(
-            this, arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE), 23
-        )
         runBlocking {
             startProgram(repository.started())
             repository.logData()
